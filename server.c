@@ -151,7 +151,7 @@ void do_login(int connectfd, MSG *msg, sqlite3 *db)
 	}
 	if(nrow == 0)
 	{
-		strcpy(msg->data, "name or password is wrong.");
+		strcpy(msg->data, "username or password is wrong.");
 	}
 	else
 	{
@@ -175,8 +175,8 @@ int  do_searchword(int connectfd, MSG *msg)
 		strcpy(msg->data, "Datalog can not open");
 		send(connectfd, msg, sizeof(MSG), 0);
 	}
-
 	printf("%s is\n", msg->data);
+
 	while(fgets(temp, 300, fp) != NULL)
 	{
 		result = strncmp(msg->data, temp, len);
@@ -226,8 +226,10 @@ void getdata(char data[])
 	struct tm *tp;
 	time(&t);
 	tp = localtime(&t);
+	int year1 = tp->tm_year + 1900;
+	int month1 = tp->tm_year + 1;
 	sprintf(data, "%d-%d-%d %d:%d:%d",
-		tp->tm_year, tp->tm_mon, tp->tm_mday,
+		year1, month1, tp->tm_mday,
 		tp->tm_hour, tp->tm_min, tp->tm_sec);
 }
 

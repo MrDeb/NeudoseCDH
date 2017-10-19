@@ -130,7 +130,7 @@ void do_register(int socketfd, MSG *msg)
 int do_login(int socketfd, MSG *msg)
 {
 	msg->type = L;
-	printf("input your name:");
+	printf("input your username:");
 	scanf("%s", msg->name);
 	printf("input your password:");
 	scanf("%s", msg->data);
@@ -152,7 +152,7 @@ void do_query(int socketfd, MSG *msg)
 
 	while(1)
 	{
-		printf("input word : ");
+		printf("Satellite Status Check : ");
 		scanf("%s", msg->data);
 		if(strcmp(msg->data, ".quit") == 0)break;
 		//printf("type = %d\n", msg->type);
