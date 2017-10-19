@@ -229,7 +229,7 @@ void getdata(char data[])
 	int year1 = tp->tm_year + 1900;
 	int month1 = tp->tm_mon + 1;
 	sprintf(data, "%d-%d-%d %d:%d:%d",
-		year1, month1, tp->tm_mday,
+		year1, tp->tm_mon, tp->tm_mday,
 		tp->tm_hour, tp->tm_min, tp->tm_sec);
 }
 
