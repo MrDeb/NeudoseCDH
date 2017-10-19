@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
 	{
 		printf("\n");
 		printf("************************************\n");
-		printf("  1: query   2: history   3: quit   \n");
+		printf("  1: Data Log   2: Time Stamp   3: Quit\n");
 		printf("************************************\n");
 		printf("please choose : ");
 
@@ -112,6 +112,8 @@ int main(int argc, char *argv[])
 	}
 	return 0;
 }
+
+/*
 void do_register(int socketfd, MSG *msg)
 {
 	msg->type = R;
@@ -124,6 +126,7 @@ void do_register(int socketfd, MSG *msg)
 	printf("register : %s\n", msg->data);
 	return;
 }
+*/
 int do_login(int socketfd, MSG *msg)
 {
 	msg->type = L;

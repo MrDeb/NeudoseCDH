@@ -170,13 +170,13 @@ int  do_searchword(int connectfd, MSG *msg)
 	int len, result;
 	len = strlen(msg->data);
 
-	if((fp = fopen("dict.txt", "r")) == NULL)
+	if((fp = fopen("datalog.txt", "r")) == NULL)
 	{
-		strcpy(msg->data, "dict can not open");
+		strcpy(msg->data, "Datalog can not open");
 		send(connectfd, msg, sizeof(MSG), 0);
 	}
 
-	printf("query word is %s \n", msg->data);
+	printf("%s is\n", msg->data);
 	while(fgets(temp, 300, fp) != NULL)
 	{
 		result = strncmp(msg->data, temp, len);
