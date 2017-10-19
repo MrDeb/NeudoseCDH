@@ -227,9 +227,9 @@ void getdata(char data[])
 	time(&t);
 	tp = localtime(&t);
 	int year1 = tp->tm_year + 1900;
-	int month1 = tp->tm_mon + 1;
+	int month1 = tp->tm_mon - 108;
 	sprintf(data, "%d-%d-%d %d:%d:%d",
-		year1, tp->tm_mon, tp->tm_mday,
+		year1, month1, tp->tm_mday,
 		tp->tm_hour, tp->tm_min, tp->tm_sec);
 }
 
