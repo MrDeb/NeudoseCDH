@@ -1,6 +1,6 @@
 # NeudoseCDH
 
-A Server Client TCP communication based on C
+# A Server Client TCP communication written by C
 
 How to start: (SQLite must be installed)
 
