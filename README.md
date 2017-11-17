@@ -8,12 +8,14 @@ How to start: (SQLite must be installed)
 
 2. Cd into NeudoseCDH folder.
 
-3. Using "make" to do the makefile compiling
+3. Using command:   $make     to perform makefile compiling.
 
-4. Run server by typing command $./server #YOUR IP ADDRESS# #PORT# (ie. ./server 192.168.0.126 10000).
+4. Open up two terminals.
 
-5. Run client by typing command $./client #YOUR IP ADDRESS# #PORT# (ie. ./client 192.168.0.126 10000).
+5. On the first terminal, start server by typing command:     $./server #YOUR IP ADDRESS# #PORT# (ex:  ./server 192.168.0.126 10000).
 
-6. Do a registration then login to your account.
+6. On the second terminal, start client by typing command:    $./client #YOUR IP ADDRESS# #PORT# (ex:  ./client 192.168.0.126 10000).
+
+6. Now the communication is built, do a simple registration then login to your account.
 
 7. Query the status you want on the client side (ex: batterylevel, humidity, illumination, temperature & solarpanel).
