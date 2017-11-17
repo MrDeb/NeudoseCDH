@@ -6,7 +6,7 @@ How to start: (SQLite must be installed)
 
 1. Clone the repository to your Mac/Linux.
 
-2. Cd into Neudose folder.
+2. Cd into NeudoseCDH folder.
 
 3. Using "make" to do the makefile compiling
 
