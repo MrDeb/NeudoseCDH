@@ -10,7 +10,7 @@ How to start: (SQLite must be installed)
 
 3. Using command:   $make     to perform makefile compiling.
 
-4. Open up two terminals.
+4. Open up two terminals on your Mac/Linux (also works with two different computers, just make sure the IP address is reachable).
 
 5. On the first terminal, start server by typing command:     $./server #YOUR IP ADDRESS# #PORT# (ex:  ./server 192.168.0.126 10000).
 
