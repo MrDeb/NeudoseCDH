@@ -16,4 +16,4 @@ How to start: (SQLite must be installed)
 
 6. Do a registration then login to your account.
 
-7. Query the status you want on the client side.
+7. Query the status you want on the client side (ex: batterylevel, humidity, illumination, temperature & solarpanel).
